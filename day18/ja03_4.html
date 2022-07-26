@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <script>
+        var jumsu = prompt("점수를 입력하세요:");
+        var num = (jumsu - (jumsu % 10)) / 10;
+        switch(num){
+        case 10:
+        case 9 :
+            document.write("A학점입니다<br>") ;
+            break;
+         case 8 :
+                document.write("B학점입니다<br>");
+                break; 
+         case 7 :
+                document.write("C학점입니다<br>");
+                break;
+         case 6 :   
+                document.write("D학점입니다<br>");
+                break; 
+         default :
+                document.write("F학점입니다.<br>") 
+        }
+        document.write("점수 :" + jumsu);
+    </script>
+    
+</body>
+</html>
