@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <button onclick="innerFunc()">
+    윈도우 내부크기
+    </button>
+    <button onclick="innerFunc()">
+    윈도우 내부 크기
+    </button>
+    <button onclick="outerFunc()">
+    윈도우 외부 크기
+    </button>
+    <script>
+        function innerFunc();{
+        var x = window.innerWidth;
+        var y = window.innerHeight;
+        alert("윈도우 내부 크기 : " + x + " ," +y);
+        }
+        function outerFunc(){
+            var x =window.outerWidth;
+            var y =window.outerHeight;
+            aleat("윈도우 외부 크기 :"+ x +"," +y);
+        }    
+        </script>
+
+    
+    
+</body>
+</html>

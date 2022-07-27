@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body onload="count()">
+    <button onclick="first()">owl</buttom>
+    <button onclick="second()">pcbook</button>
+    <iframe src="http://www.owl.co.kr"></iframe>
+    <iframe src="http://www.pisibook.co.kr"></iframe>
+    <script>
+        function count(){
+            var cnt = window.length;
+            alert("프레임의 개수 :" +cnt);
+
+        }
+        function frist(){
+            window.frames[0].location
+            "http://www.daum.net";
+        }
+        function second(){
+            window.frames[1].location
+            "http://www.daum.net";
+        }
+    </script>
+    
+</body>
+</html>

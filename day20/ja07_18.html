@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h3>버튼을 클릭하면 이전 페이지로 돌아갑니다</h3>
+    <button onclick="goBack()">이전 페이지</button>
+    <button onclick="gofront()">앞 페이지</button>
+    <script>
+        function goBack(){
+            history.back();
+            //history.go(-1);
+        }
+        function gofront(){
+            history.go(-1);
+        }
+    </script>
+</body>
+</html>
