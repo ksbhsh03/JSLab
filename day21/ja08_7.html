@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h3 class="greeting">환영합니다</h3>
+    <h3 class="greeting">환영합니다</h3>
+    <h3 class="greeting">환영합니다</h3>
+    
+    
+    <button onclick="changeFunc()">클릭하세여</button>
+
+    <script>
+        function changeFunc(){
+            var x =document.getElementsByTagName("h3");
+            var i;
+            for(i=0; i<x.length; i++){
+                x[i].style.backgroundColor="yellow";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h3>환영합니다</h3>
+    <div id="greeting">
+    <h3>어서오세요</h3>
+    <h3>반갑습니다</h3>
+</div>
+<p id="here"></p>
+
+<script>
+var x = document.getElementById("greenting");
+var y = x.getElementsByTagName("h3");
+document.getElementById("here").innerHTML = "greeting 내의 첫번째 제목 :" +y[0].innerHTML;
+</script>
+    
+</body>
+</html>

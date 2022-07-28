@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<h3>버튼을 클릭하면 트롭박스의 크기와 자식노드가 표시됩니다</h3>
+<select id="selectList" size="4"><option>빨간 사과</option><option>노란 바나나</option><option>블루베리</option><option>청포도</option></select><br><br>
+
+<button onclick="selectFunc()">클릭하세요</button>
+<p id="here1"></p>
+<p id="here2"></p>
+
+<script>
+    function selectFunc(){
+        var c = document.getElementById("selectList").childNodes
+        
+        document.getElementById("here1").innerHTML = c.length;
+        document.getElementById("here2").innerHTML = c[1].text;
+    }
+</script>
+</body>
+</html>
